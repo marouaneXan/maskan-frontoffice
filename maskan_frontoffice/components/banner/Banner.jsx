@@ -1,6 +1,7 @@
 import React from 'react'
 import banner from '../../public/mh-morocco-banner.webp'
 import Image from 'next/image'
+import Search from '../search/Search'
 
 const Banner = () => {
   return (
@@ -22,6 +23,7 @@ const Banner = () => {
           <Image src={banner} />
         </div> 
       </div>
+      <Search/>
     </section>
   )
 }
