@@ -2,6 +2,7 @@ import React from 'react'
 import banner from '../../public/mh-morocco-banner.webp'
 import Image from 'next/image'
 import Search from '../search/Search'
+import Properties from '../properties'
 
 const Banner = () => {
   return (
