@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Property from './Property'
+import { PropertyContext } from '@/context/property'
 
 const Properties = () => {
+  const {properties}=useContext(PropertyContext)
+  console.log(properties);
   return (
     <section className='mb-20'>
         <div className="p-[1rem] lg:p-[2rem] mx-auto">
