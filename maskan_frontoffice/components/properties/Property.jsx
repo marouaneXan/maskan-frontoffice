@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Property = () => {
   return (
-    <div className='bg-white shadow-1 shadow-violet-500 p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto cursor-pointer hover:shadow-2xl transition'>
+    <div className='bg-white shadow-1 shadow-violet-400 p-5 rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto cursor-pointer hover:shadow-2xl transition mb-5'>
         <Image className='rounded-lg rounded-tl-[90px] mb-8' src={imge} alt="" />
         <div className='mb-4 flex gap-x-2 text-sm'>
             <div className="bg-green-500 rounded-full text-white px-3">
