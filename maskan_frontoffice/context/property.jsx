@@ -29,11 +29,13 @@ const PropertyContextProvider = ({ children }) => {
     const values = useMemo(
         () => ({
             getProperties,
-            properties
+            properties,
+            loading
         }),
         [
             getProperties,
-            properties
+            properties,
+            loading
         ]
     );
     return <PropertyContext.Provider value={values}>{children}</PropertyContext.Provider>;
