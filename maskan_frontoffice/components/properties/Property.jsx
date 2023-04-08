@@ -30,7 +30,7 @@ const Property = ({ property }) => {
                     <div className='text-[20px]'>
                         <BiBed />
                     </div>
-                    <div>{property.bed}</div>
+                    <div>{property.bedrooms}</div>
                 </div>
                 <div className="flex items-center text-gray-600 gap-1">
                     <div className='text-[20px]'>
