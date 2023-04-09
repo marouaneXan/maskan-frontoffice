@@ -1,6 +1,7 @@
 import { PropertyContext } from '@/context/property';
 import React, { useContext, useState } from 'react'
 import { AiOutlineSearch } from 'react-icons/ai'
+import { cities } from '@/data/cities';
 
 const Search = () => {
     const { searchProperties } = useContext(PropertyContext)
@@ -36,9 +37,11 @@ const Search = () => {
                 <option selected disabled>
                     Choose a city
                 </option>
-                <option>
-                    feklz
-                </option>
+                {cities.map((city) => (
+                    <option>
+                        {city.ville}
+                    </option>
+                ))}
             </select>
             <input
                 className="border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-2 focus:ring-fuchsia-50 block w-full p-2"
