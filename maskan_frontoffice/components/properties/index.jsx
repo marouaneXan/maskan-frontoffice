@@ -3,6 +3,7 @@ import Property from './Property'
 import { PropertyContext } from '@/context/property'
 import Spinner from '../partials/spinner'
 import Empty from '../partials/empty'
+import Link from 'next/link'
 
 const Properties = () => {
   const { properties, loading, empty } = useContext(PropertyContext)
@@ -18,7 +19,9 @@ const Properties = () => {
             ) : (
               <div className='grid md:grid-cols-2 lg:grid-cols-3'>
                 {properties?.properties?.length && properties.properties.map((property) => (
-                  <Property property={property} key={property._id} />
+                  <Link href="/property/[id]" as={`/property/${property._id}`}>
+                    <Property property={property} key={property._id} />
+                  </Link>
                 ))}
               </div>
             )}
