@@ -51,7 +51,7 @@ const Register = () => {
     }
   }
   useEffect(() => {
-    loggedIn() ? Router.push('/') : Router.push('/auth/login')
+    loggedIn() ? Router.push('/') : Router.push('/auth/register')
   }, [loggedIn])
   return (
     <div className="w-full h-screen relative">

@@ -15,7 +15,7 @@ const AuthContextProvider = ({ children }) => {
     const register = async (data) => {
         setLoading(true);
         const res = await axios
-            .post(endpoint + "/client/auth/register", data)
+            .post(endpoint + "/client/auth/createAccount", data)
             .catch((err) => {
                 const message =
                     (err.res && err.res.data && err.res.data.message) ||
